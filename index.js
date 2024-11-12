@@ -61,26 +61,6 @@ app.post("/api/get-all-flavors", async (req, res, next) => {
 
 });
 
-// app.post("/api/get-all-flavors", async (req, res, next) => {
-//   const {name, is_fav} = req.body;
-
-// try {
-//   const SQL = `
-//     INSERT INTO flavors(name, is_favorite)
-//     VALUES($1, $2)
-//     RETURNING *
-//   `
-//   const response = await client.query(SQL, [name, is_fav]);
-//   res.send(response.rows[0])
-// } catch (err) {
-//   next(err)
-// }
-
-// });
-
-
-
-
 
 
 
